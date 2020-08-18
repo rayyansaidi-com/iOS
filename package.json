@@ -1,0 +1,30 @@
+{
+  "name": "rayyansaidi-mobile",
+  "version": "0.0.0",
+  "description": "Use rayyansaidi.com on your iPhone!",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rayyansaidi-com/mobile.git"
+  },
+  "author": "Rayyan Saidi",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/rayyansaidi-com/mobile/issues"
+  },
+  "homepage": "https://github.com/rayyansaidi-com/mobile#readme",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.4",
+    "serve": "^11.3.2"
+  }
+}
