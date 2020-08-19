@@ -3,7 +3,15 @@ const assets = [
   "/index.html",
   "/main.css",
   "/main.js",
-  "icon.png",
+  "/fontawesome-5.14.0.min.js",
+  "/images/icon.png",
+  "/images/rayyan.jpg",
+  "/images/salam.jpg",
+  "/images/wissam.jpg",
+  "/images/rakie.jpg",
+  "/images/salame.jpg",
+  "/images/orlando.jpeg",
+  "/images/south.jpg",
   // Add extra assets here.
   // Remember that these are not all of the files;
   // They are all of the files used by the browser,
