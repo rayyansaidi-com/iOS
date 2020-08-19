@@ -14,14 +14,6 @@
 </head>
 
 <body>
-    <div class="tab">
-        <div class="buttonContainer">
-            <button id="homeTab" class="tablinks caption-3 active"><span class="fas fa-home"></span><br />Home</button>
-            <button id="holidaysTab" class="tablinks caption-3"><span
-                    class="fas fa-gifts"></span><br />Holidays</button>
-            <button id="settingsTab" class="tablinks caption-3"><span class="fas fa-cog"></span><br />Settings</button>
-        </div>
-    </div>
     <div id="home">
         <div class="jumbotron">
             <a href="index.html">
@@ -167,17 +159,21 @@
                     if yes, you have come to the right place. Follow the instructions
                     below to make your perfect birthday card!
                 </p>
+                <br /><br /><br /><br /><br />
                 <ol>
                     <li>Click one of the links to your left</li>
+                    <br /><br />
                     <li>
                         Fill in the blanks with whatever you want. Examples are on the
                         templates
                     </li>
+                    <br /><br />
                     <li>
                         Take a screenshot of your final prodect by hitting the on/off button and the volume-down button
                         if your device doesn't have a home button. If it does, hit the home button and the off/on
                         button.
                     </li>
+                    <br /><br />
                     <li>
                         Open the file, print it, and show it to whoever this is addressed
                         to.
@@ -244,17 +240,38 @@
     </div>
     </div>
     <div id="settings">
-        <button id="section"><div class="settings-list">Sections Shown</div></button>
-        <button id="theme"><div class="settings-list">Theme</div></button>
-        <div class="sectionsettings">
-            <button id="backsection">Go Back</button>
+      <div class="jumbotron">
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <h1>Settings</h1>
+      </div>
+      <div class="body full-width">
+        <div id="settingsMenu">
+          <div id="sectionsButton" class="settings-list"><div class="settings-text"><span class="far fa-list-alt"></span>&nbsp;&nbsp;&nbsp;Sections Shown</div></div>
+          <div id="themeButton" class="settings-list"><div class="settings-text"><span class="fas fa-paint-brush"></span>&nbsp;&nbsp;&nbsp;Theme</div><select onchange="readThemeDropdown()"><option value="default">default</option><option value="light">light</option><option value="dark">dark</option></select></div>
         </div>
-        <div class="themesettings">
-            <button id="backtheme">Go Back</button>
+        <div id="sectionsSettings">
+            <input type="checkbox" checked> Home Page
+            <br /><br />
+            <input type="checkbox" checked> Holiday templates
+            <br /><br />
+            <button id="backSections">Go Back</button>
         </div>
+        <!-- <div id="themeSettings">
+            <button id="backTheme">Go Back</button>
+        </div> -->
+      </div>
+    </div>
+    <div class="tab">
+      <div class="buttonContainer">
+          <button id="homeTab" class="tablinks caption-3 active"><span class="fas fa-home"></span><br />Home</button>
+          <button id="holidaysTab" class="tablinks caption-3"><span class="fas fa-gifts"></span><br />Holidays</button>
+          <button id="settingsTab" class="tablinks caption-3"><span class="fas fa-cog"></span><br />Settings</button>
+      </div>
     </div>
     <script src="main.js"></script>
-    <script src="fontawesome-5.14.0.min.js"></script>
+    <script data-search-pseudo-elements src="fontawesome-5.14.0.min.js"></script>
 </body>
 
 </html>

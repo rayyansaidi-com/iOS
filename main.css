@@ -129,6 +129,12 @@ caption, figcaption, .caption-1 , .caption {
   cursor: pointer;
   transition: 0.25s;
 }
+
+.tablinks span {
+  font-size: 13pt;
+  line-height: 18pt;
+}
+
 /* Create an active/current tablink class */
 .tab button.active {
   /* background-color: #d1d1d6; */
@@ -192,54 +198,91 @@ a {
 }
 
 .settings-list {
-  background-color: rgb(174, 174, 178);
+  background-color: rgb(229, 229, 234);
+  position: relative;
+  border-top: 1px solid #c7c7cc;
   width: 100vw;
-  height: 32px;
+  height: 64px;
 }
 
-#sectionsettings {
+.settings-list:first-child {
+  border-top: none;
+}
+
+.settings-text {
+  position: absolute;
+  top: 50%;
+  margin-left: 50px;
+  transform: translateY(-50%);
+}
+
+#sectionsButton::after {
+  content: "\f054";
+  position: absolute;
+  font-family: "Font Awesome 5 Solid";
   display: none;
 }
 
-#themesettings {
+#themeButton select {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+.settings-list svg.fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%)
+}
+
+#sectionsSettings {
   display: none;
 }
 
-#backtheme {
+#themeSettings {
   display: none;
 }
 
-#backsection {
-  display: none;
+
+
+
+
+.body.full-width {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 button {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  .tab {
-    background-color: #2c2c2e;
+/* Dark Mode */
+  .dark .tab {
+    /* background-color: #2c2c2e; */
+    background-color: #1c1c1e;
     border-top-color: #48484a;
   }
-  body {
+  body.dark {
     background-color: #1c1c1e;
     color: #f2f2f7;
   }
-  .tab button {
+  .dark .tab button {
     color: #636366;
   }
-  .tab button.active {
+  .dark .tab button.active {
     /* background-color: #3a3a3c; */
     color: #007aff;
   }
-  a {
+  .dark a {
     color: #007aff;
   }
-  .jumbotron {
+  .dark .jumbotron {
     background-color: #0e0e0f;
   }
-  .settings-list {
-    background-color: rgb(44, 44, 102);
+  .dark .settings-list {
+    background-color: rgb(44, 44, 46);
+    border-top-color: #48484a;
   }
-}
+
