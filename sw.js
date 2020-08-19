@@ -11,7 +11,7 @@ const assets = [
   '/images/rakie.jpg',
   '/images/salame.jpg',
   '/images/orlando.jpeg',
-  '/images/south.jpg'
+  '/images/south.jpeg'
   // Add extra assets here.
   // Remember that these are not all of the files;
   // They are all of the files used by the browser,

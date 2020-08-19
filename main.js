@@ -1,4 +1,4 @@
-const isDev = true
+const isDev = false
 const notDev = !isDev
 const homeTab = document.getElementById('homeTab')
 const holidaysTab = document.getElementById('holidaysTab')
@@ -6,7 +6,6 @@ const settingsTab = document.getElementById('settingsTab')
 const home = document.getElementById('home')
 const holidays = document.getElementById('holidays')
 const settings = document.getElementById('settings')
-const sectionsButton = document.getElementById('sectionsButton')
 const sectionsSettings = document.getElementById('sectionsSettings')
 const settingsMenu = document.getElementById('settingsMenu')
 const backSections = document.getElementById('backSections')
@@ -38,14 +37,14 @@ settingsTab.addEventListener('click', () => {
   settings.style.display = 'block'
 })
 
-sectionsButton.addEventListener('click', () => {
-  sectionsSettings.style.display = 'block'
-  settingsMenu.style.display = 'none'
-  backSections.addEventListener('click', () => {
-    sectionsSettings.style.display = 'none'
-    settingsMenu.style.display = 'block'
-  })
-})
+// sectionsButton.addEventListener('click', () => {
+//   sectionsSettings.style.display = 'block'
+//   settingsMenu.style.display = 'none'
+//   backSections.addEventListener('click', () => {
+//     sectionsSettings.style.display = 'none'
+//     settingsMenu.style.display = 'block'
+//   })
+// })
 
 // section.addEventListener('click', () => {
 //   section.style.display = 'none';
