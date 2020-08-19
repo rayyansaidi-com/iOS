@@ -20,7 +20,7 @@ const assets = [
 
 self.addEventListener('install', installEvent => {
   installEvent.waitUntil(
-    caches.open('rayyansaidi-ios-0.0.0').then(cache => {
+    caches.open('rayyansaidi-ios-0.1.0').then(cache => {
       cache.addAll(assets)
     })
   )
