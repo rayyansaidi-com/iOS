@@ -6,6 +6,10 @@ const settingsTab = document.getElementById('settingsTab')
 const home = document.getElementById('home')
 const holidays = document.getElementById('holidays')
 const settings = document.getElementById('settings')
+const section = document.getElementById('section')
+const theme = document.getElementById('theme')
+const sectionsettings = document.getElementById('sectionsettings')
+const themesettings = document.getElementById('themesettings')
 
 homeTab.addEventListener('click', () => {
   homeTab.classList.add('active')
@@ -32,6 +36,34 @@ settingsTab.addEventListener('click', () => {
   home.style.display = 'none'
   holidays.style.display = 'none'
   settings.style.display = 'block'
+})
+
+section.addEventListener('click', () => {
+  section.style.display = 'none';
+  theme.style.display = 'none';
+  sectionsettings.style.display = 'block';
+  themesettings.style.display = 'none';
+})
+
+theme.addEventListener('click', () => {
+  section.style.display = 'none';
+  theme.style.display = 'none';
+  sectionsettings.style.display = 'none';
+  themesettings.style.display = 'block';
+})
+
+document.getElementById('sectionsettings').addEventListener('click', () => {
+  section.style.display = 'block';
+  theme.style.display = 'block';
+  sectionsettings.style.display = 'none';
+  themesettings.style.display = 'none';
+})
+
+document.getElementById('themesettings').addEventListener('click', () => {
+  section.style.display = 'block';
+  theme.style.display = 'block';
+  sectionsettings.style.display = 'none';
+  themesettings.style.display = 'none';
 })
 
 if (notDev) {
