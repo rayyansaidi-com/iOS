@@ -1,4 +1,4 @@
-const isDev = false
+const isDev = true
 const notDev = !isDev
 const homeTab = document.getElementById('homeTab')
 const holidaysTab = document.getElementById('holidaysTab')
@@ -9,6 +9,8 @@ const settings = document.getElementById('settings')
 const sectionsSettings = document.getElementById('sectionsSettings')
 const settingsMenu = document.getElementById('settingsMenu')
 const backSections = document.getElementById('backSections')
+const creditsButton = document.getElementById('creditsButton')
+const creditsSettings = document.getElementById('creditsSettings')
 
 homeTab.addEventListener('click', () => {
   homeTab.classList.add('active')
@@ -35,6 +37,16 @@ settingsTab.addEventListener('click', () => {
   home.style.display = 'none'
   holidays.style.display = 'none'
   settings.style.display = 'block'
+})
+
+creditsButton.addEventListener('click', () => {
+  creditsSettings.style.display = 'block'
+  settingsMenu.style.display = 'none'
+  backCredits.addEventListener('click', () => {
+    sectionsSettings.style.display = 'none'
+    creditsSettings.style.display = 'none'
+    settingsMenu.style.display = 'block'
+  })
 })
 
 // sectionsButton.addEventListener('click', () => {

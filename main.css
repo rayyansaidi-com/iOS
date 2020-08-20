@@ -216,7 +216,7 @@ a {
   transform: translateY(-50%);
 }
 
-#sectionsButton::after {
+#sectionsButton::after, #creditsButton::after {
   content: "\f054";
   position: absolute;
   font-family: "Font Awesome 5 Solid";
@@ -245,9 +245,13 @@ a {
   display: none;
 }
 
+#creditsSettings {
+  display: none;
+}
 
-
-
+#creditsSettings {
+  text-align: left;
+}
 
 .body.full-width {
   padding-left: 0;
